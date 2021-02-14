@@ -7,7 +7,7 @@
 
 import UIKit
 import Alamofire
-import LoadingShimmer
+import KeychainAccess
 
 class SigninViewController: UIViewController {
     
@@ -66,14 +66,21 @@ class SigninViewController: UIViewController {
         
         AF.request("https://survey-api.nimblehq.co/api/v1/oauth/token", method: .post, parameters: parameters, encoding: JSONEncoding.default)
             .validate()
-            .responseJSON { (response) in
+            .responseDecodable(of: ResponseData<LoginCredential>.self) { (response) in
                 switch response.result {
-                case .success(let json):
-                    print(json)
+                case .success(let responseData):
+                    self.saveAccessToken(from: responseData.data)
                 
                 case .failure(let error):
-                    print(error.asAFError(orFailWith: "error"))
+                    print(error)
                 }
             }
+    }
+    
+    func saveAccessToken(from credential: LoginCredential) {
+        let keychain = Keychain(service: "com.nimble-token")
+        let encoder = JSONEncoder()
+        let credentialData = try! encoder.encode(credential)
+        keychain[data: "login_credential"] = credentialData
     }
 }
