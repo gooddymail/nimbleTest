@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class SigninViewController: UIViewController {
     
@@ -56,5 +57,21 @@ class SigninViewController: UIViewController {
     }
     
     @IBAction func loginDidTapped(_ sender: UIButton) {
+        let parameters: [String: String] = ["grant_type": "password",
+                                            "email": emailTextField.text!,
+                                            "password": passwordTextField.text!,
+                                            "client_id": "ofzl-2h5ympKa0WqqTzqlVJUiRsxmXQmt5tkgrlWnOE",
+                                            "client_secret": "lMQb900L-mTeU-FVTCwyhjsfBwRCxwwbCitPob96cuU"]
+        AF.request("https://survey-api.nimblehq.co/api/v1/oauth/token", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+            .validate()
+            .responseJSON { (response) in
+                switch response.result {
+                case .success(let json):
+                    print(json)
+                
+                case .failure(let error):
+                    print(error.asAFError(orFailWith: "error"))
+                }
+            }
     }
 }
