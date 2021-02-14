@@ -17,6 +17,7 @@
 		7E76884925D91A16008D1433 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76884825D91A16008D1433 /* ResponseData.swift */; };
 		7E76886425D957D4008D1433 /* SurveyContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76886325D957D4008D1433 /* SurveyContainerViewController.swift */; };
 		7E76886925D9669B008D1433 /* LoginSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76886825D9669B008D1433 /* LoginSession.swift */; };
+		7E76886E25D96FB8008D1433 /* OAuthAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76886D25D96FB8008D1433 /* OAuthAuthenticator.swift */; };
 		DAB9FAC6FC391092413BADE2 /* Pods_nimbleTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E7ECE3006BB91740C1D8BA /* Pods_nimbleTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		7E76884825D91A16008D1433 /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
 		7E76886325D957D4008D1433 /* SurveyContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyContainerViewController.swift; sourceTree = "<group>"; };
 		7E76886825D9669B008D1433 /* LoginSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSession.swift; sourceTree = "<group>"; };
+		7E76886D25D96FB8008D1433 /* OAuthAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthAuthenticator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				7E0B93DE25D7CD5900C2CE48 /* Info.plist */,
 				7E76883025D8C4F3008D1433 /* SigninViewController.swift */,
 				7E76886325D957D4008D1433 /* SurveyContainerViewController.swift */,
+				7E76886D25D96FB8008D1433 /* OAuthAuthenticator.swift */,
 			);
 			path = nimbleTest;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				7E76883125D8C4F3008D1433 /* SigninViewController.swift in Sources */,
 				7E76884925D91A16008D1433 /* ResponseData.swift in Sources */,
 				7E0B93D125D7CD5900C2CE48 /* AppDelegate.swift in Sources */,
+				7E76886E25D96FB8008D1433 /* OAuthAuthenticator.swift in Sources */,
 				7E76886925D9669B008D1433 /* LoginSession.swift in Sources */,
 				7E76886425D957D4008D1433 /* SurveyContainerViewController.swift in Sources */,
 			);

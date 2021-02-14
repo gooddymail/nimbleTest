@@ -6,11 +6,15 @@
 //
 
 import Foundation
+import Alamofire
 
-struct LoginCredential: Codable {
+struct LoginCredential: Codable, AuthenticationCredential {
     let accessToken: String
     let refreshToken: String
     let tokenType: String
+    let expiration: Date
+    
+    var requiresRefresh: Bool { Date(timeIntervalSinceNow: 60 * 5) > expiration }
     
     enum CodingKeys: String, CodingKey {
         case attributes
@@ -20,6 +24,7 @@ struct LoginCredential: Codable {
         case accessToken = "access_token"
         case refreshToken = "refresh_token"
         case tokenType = "token_type"
+        case expiration = "expires_in"
     }
     
     init(from decoder: Decoder) throws {
@@ -29,6 +34,9 @@ struct LoginCredential: Codable {
         accessToken = try attributes.decode(String.self, forKey: .accessToken)
         refreshToken = try attributes.decode(String.self, forKey: .refreshToken)
         tokenType = try attributes.decode(String.self, forKey: .tokenType)
+        
+        let timeInterval = try attributes.decode(Double.self, forKey: .expiration)
+        expiration = Date(timeIntervalSinceNow: timeInterval)
     }
     
     func encode(to encoder: Encoder) throws {
@@ -38,5 +46,6 @@ struct LoginCredential: Codable {
         try attributes.encode(accessToken, forKey: .accessToken)
         try attributes.encode(refreshToken, forKey: .refreshToken)
         try attributes.encode(tokenType, forKey: .tokenType)
+        try attributes.encode(expiration.timeIntervalSinceNow, forKey: .expiration)
     }
 }
