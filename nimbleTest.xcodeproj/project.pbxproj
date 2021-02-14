@@ -18,6 +18,8 @@
 		7E76886425D957D4008D1433 /* SurveyContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76886325D957D4008D1433 /* SurveyContainerViewController.swift */; };
 		7E76886925D9669B008D1433 /* LoginSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76886825D9669B008D1433 /* LoginSession.swift */; };
 		7E76886E25D96FB8008D1433 /* OAuthAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76886D25D96FB8008D1433 /* OAuthAuthenticator.swift */; };
+		7E76887325D978E0008D1433 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76887225D978E0008D1433 /* UserProfile.swift */; };
+		7E76887925D978FE008D1433 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76887825D978FE008D1433 /* Survey.swift */; };
 		DAB9FAC6FC391092413BADE2 /* Pods_nimbleTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E7ECE3006BB91740C1D8BA /* Pods_nimbleTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		7E76886325D957D4008D1433 /* SurveyContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyContainerViewController.swift; sourceTree = "<group>"; };
 		7E76886825D9669B008D1433 /* LoginSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSession.swift; sourceTree = "<group>"; };
 		7E76886D25D96FB8008D1433 /* OAuthAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthAuthenticator.swift; sourceTree = "<group>"; };
+		7E76887225D978E0008D1433 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		7E76887825D978FE008D1433 /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,8 @@
 				7E76884325D91971008D1433 /* LoginCredential.swift */,
 				7E76884825D91A16008D1433 /* ResponseData.swift */,
 				7E76886825D9669B008D1433 /* LoginSession.swift */,
+				7E76887225D978E0008D1433 /* UserProfile.swift */,
+				7E76887825D978FE008D1433 /* Survey.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -335,10 +341,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E76887925D978FE008D1433 /* Survey.swift in Sources */,
 				7E76884425D91971008D1433 /* LoginCredential.swift in Sources */,
 				7E76883125D8C4F3008D1433 /* SigninViewController.swift in Sources */,
 				7E76884925D91A16008D1433 /* ResponseData.swift in Sources */,
 				7E0B93D125D7CD5900C2CE48 /* AppDelegate.swift in Sources */,
+				7E76887325D978E0008D1433 /* UserProfile.swift in Sources */,
 				7E76886E25D96FB8008D1433 /* OAuthAuthenticator.swift in Sources */,
 				7E76886925D9669B008D1433 /* LoginSession.swift in Sources */,
 				7E76886425D957D4008D1433 /* SurveyContainerViewController.swift in Sources */,
