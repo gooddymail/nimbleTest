@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7E0B93D125D7CD5900C2CE48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B93D025D7CD5900C2CE48 /* AppDelegate.swift */; };
-		7E0B93D525D7CD5900C2CE48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B93D425D7CD5900C2CE48 /* ViewController.swift */; };
 		7E0B93D825D7CD5900C2CE48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0B93D625D7CD5900C2CE48 /* Main.storyboard */; };
 		7E0B93DA25D7CD5900C2CE48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0B93D925D7CD5900C2CE48 /* Assets.xcassets */; };
 		7E0B93DD25D7CD5900C2CE48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0B93DB25D7CD5900C2CE48 /* LaunchScreen.storyboard */; };
 		7E0B93E825D7CD5A00C2CE48 /* nimbleTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B93E725D7CD5A00C2CE48 /* nimbleTestTests.swift */; };
+		7E76883125D8C4F3008D1433 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76883025D8C4F3008D1433 /* SigninViewController.swift */; };
 		DAB9FAC6FC391092413BADE2 /* Pods_nimbleTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E7ECE3006BB91740C1D8BA /* Pods_nimbleTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +39,6 @@
 		77E7ECE3006BB91740C1D8BA /* Pods_nimbleTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nimbleTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0B93CD25D7CD5900C2CE48 /* nimbleTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nimbleTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0B93D025D7CD5900C2CE48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E0B93D425D7CD5900C2CE48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E0B93D725D7CD5900C2CE48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E0B93D925D7CD5900C2CE48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E0B93DC25D7CD5900C2CE48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		7E0B93E725D7CD5A00C2CE48 /* nimbleTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nimbleTestTests.swift; sourceTree = "<group>"; };
 		7E0B93E925D7CD5A00C2CE48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E0B93EE25D7CD5A00C2CE48 /* nimbleTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nimbleTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E76883025D8C4F3008D1433 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,11 +110,11 @@
 			isa = PBXGroup;
 			children = (
 				7E0B93D025D7CD5900C2CE48 /* AppDelegate.swift */,
-				7E0B93D425D7CD5900C2CE48 /* ViewController.swift */,
 				7E0B93D625D7CD5900C2CE48 /* Main.storyboard */,
 				7E0B93D925D7CD5900C2CE48 /* Assets.xcassets */,
 				7E0B93DB25D7CD5900C2CE48 /* LaunchScreen.storyboard */,
 				7E0B93DE25D7CD5900C2CE48 /* Info.plist */,
+				7E76883025D8C4F3008D1433 /* SigninViewController.swift */,
 			);
 			path = nimbleTest;
 			sourceTree = "<group>";
@@ -310,7 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E0B93D525D7CD5900C2CE48 /* ViewController.swift in Sources */,
+				7E76883125D8C4F3008D1433 /* SigninViewController.swift in Sources */,
 				7E0B93D125D7CD5900C2CE48 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
