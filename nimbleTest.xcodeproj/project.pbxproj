@@ -3,18 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7E0B93D125D7CD5900C2CE48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B93D025D7CD5900C2CE48 /* AppDelegate.swift */; };
-		7E0B93D325D7CD5900C2CE48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B93D225D7CD5900C2CE48 /* SceneDelegate.swift */; };
 		7E0B93D525D7CD5900C2CE48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B93D425D7CD5900C2CE48 /* ViewController.swift */; };
 		7E0B93D825D7CD5900C2CE48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0B93D625D7CD5900C2CE48 /* Main.storyboard */; };
 		7E0B93DA25D7CD5900C2CE48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0B93D925D7CD5900C2CE48 /* Assets.xcassets */; };
 		7E0B93DD25D7CD5900C2CE48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0B93DB25D7CD5900C2CE48 /* LaunchScreen.storyboard */; };
 		7E0B93E825D7CD5A00C2CE48 /* nimbleTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B93E725D7CD5A00C2CE48 /* nimbleTestTests.swift */; };
-		7E0B93F325D7CD5A00C2CE48 /* nimbleTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B93F225D7CD5A00C2CE48 /* nimbleTestUITests.swift */; };
 		DAB9FAC6FC391092413BADE2 /* Pods_nimbleTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E7ECE3006BB91740C1D8BA /* Pods_nimbleTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +39,6 @@
 		77E7ECE3006BB91740C1D8BA /* Pods_nimbleTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nimbleTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0B93CD25D7CD5900C2CE48 /* nimbleTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nimbleTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0B93D025D7CD5900C2CE48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E0B93D225D7CD5900C2CE48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7E0B93D425D7CD5900C2CE48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E0B93D725D7CD5900C2CE48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E0B93D925D7CD5900C2CE48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,8 +48,6 @@
 		7E0B93E725D7CD5A00C2CE48 /* nimbleTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nimbleTestTests.swift; sourceTree = "<group>"; };
 		7E0B93E925D7CD5A00C2CE48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E0B93EE25D7CD5A00C2CE48 /* nimbleTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nimbleTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E0B93F225D7CD5A00C2CE48 /* nimbleTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nimbleTestUITests.swift; sourceTree = "<group>"; };
-		7E0B93F425D7CD5A00C2CE48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +82,6 @@
 				062A300166985F4348754C77 /* Pods-nimbleTest.debug.xcconfig */,
 				75C1F38F900A55D3E1E76933 /* Pods-nimbleTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -96,7 +90,6 @@
 			children = (
 				7E0B93CF25D7CD5900C2CE48 /* nimbleTest */,
 				7E0B93E625D7CD5A00C2CE48 /* nimbleTestTests */,
-				7E0B93F125D7CD5A00C2CE48 /* nimbleTestUITests */,
 				7E0B93CE25D7CD5900C2CE48 /* Products */,
 				62754984AB9E2727E20B5793 /* Pods */,
 				81B5384776F6F39D921202CA /* Frameworks */,
@@ -117,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				7E0B93D025D7CD5900C2CE48 /* AppDelegate.swift */,
-				7E0B93D225D7CD5900C2CE48 /* SceneDelegate.swift */,
 				7E0B93D425D7CD5900C2CE48 /* ViewController.swift */,
 				7E0B93D625D7CD5900C2CE48 /* Main.storyboard */,
 				7E0B93D925D7CD5900C2CE48 /* Assets.xcassets */,
@@ -134,15 +126,6 @@
 				7E0B93E925D7CD5A00C2CE48 /* Info.plist */,
 			);
 			path = nimbleTestTests;
-			sourceTree = "<group>";
-		};
-		7E0B93F125D7CD5A00C2CE48 /* nimbleTestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7E0B93F225D7CD5A00C2CE48 /* nimbleTestUITests.swift */,
-				7E0B93F425D7CD5A00C2CE48 /* Info.plist */,
-			);
-			path = nimbleTestUITests;
 			sourceTree = "<group>";
 		};
 		81B5384776F6F39D921202CA /* Frameworks */ = {
@@ -329,7 +312,6 @@
 			files = (
 				7E0B93D525D7CD5900C2CE48 /* ViewController.swift in Sources */,
 				7E0B93D125D7CD5900C2CE48 /* AppDelegate.swift in Sources */,
-				7E0B93D325D7CD5900C2CE48 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +327,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E0B93F325D7CD5A00C2CE48 /* nimbleTestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
