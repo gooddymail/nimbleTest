@@ -8,5 +8,6 @@ target 'nimbleTest' do
   pod 'Alamofire', '~> 5.2'
   pod 'AlamofireImage', '~> 4.1'
   pod 'KeychainAccess'	
+  pod 'SkeletonView'
 
 end

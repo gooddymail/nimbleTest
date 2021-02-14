@@ -15,6 +15,13 @@
 		7E76883125D8C4F3008D1433 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76883025D8C4F3008D1433 /* SigninViewController.swift */; };
 		7E76884425D91971008D1433 /* LoginCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76884325D91971008D1433 /* LoginCredential.swift */; };
 		7E76884925D91A16008D1433 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76884825D91A16008D1433 /* ResponseData.swift */; };
+		7E76886425D957D4008D1433 /* SurveyContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76886325D957D4008D1433 /* SurveyContainerViewController.swift */; };
+		7E76886925D9669B008D1433 /* LoginSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76886825D9669B008D1433 /* LoginSession.swift */; };
+		7E76886E25D96FB8008D1433 /* OAuthAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76886D25D96FB8008D1433 /* OAuthAuthenticator.swift */; };
+		7E76887325D978E0008D1433 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76887225D978E0008D1433 /* UserProfile.swift */; };
+		7E76887925D978FE008D1433 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76887825D978FE008D1433 /* Survey.swift */; };
+		7E76887F25D97F31008D1433 /* SurveyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76887E25D97F31008D1433 /* SurveyPageViewController.swift */; };
+		7E76888725D97F4C008D1433 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76888625D97F4C008D1433 /* SurveyViewController.swift */; };
 		DAB9FAC6FC391092413BADE2 /* Pods_nimbleTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E7ECE3006BB91740C1D8BA /* Pods_nimbleTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +60,13 @@
 		7E76883F25D913A0008D1433 /* nimbleTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = nimbleTest.entitlements; sourceTree = "<group>"; };
 		7E76884325D91971008D1433 /* LoginCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredential.swift; sourceTree = "<group>"; };
 		7E76884825D91A16008D1433 /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
+		7E76886325D957D4008D1433 /* SurveyContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyContainerViewController.swift; sourceTree = "<group>"; };
+		7E76886825D9669B008D1433 /* LoginSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSession.swift; sourceTree = "<group>"; };
+		7E76886D25D96FB8008D1433 /* OAuthAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthAuthenticator.swift; sourceTree = "<group>"; };
+		7E76887225D978E0008D1433 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		7E76887825D978FE008D1433 /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
+		7E76887E25D97F31008D1433 /* SurveyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyPageViewController.swift; sourceTree = "<group>"; };
+		7E76888625D97F4C008D1433 /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +128,8 @@
 		7E0B93CF25D7CD5900C2CE48 /* nimbleTest */ = {
 			isa = PBXGroup;
 			children = (
+				7E76887D25D97F0B008D1433 /* Network */,
+				7E76885325D9254D008D1433 /* Models */,
 				7E76883F25D913A0008D1433 /* nimbleTest.entitlements */,
 				7E0B93D025D7CD5900C2CE48 /* AppDelegate.swift */,
 				7E0B93D625D7CD5900C2CE48 /* Main.storyboard */,
@@ -121,8 +137,9 @@
 				7E0B93DB25D7CD5900C2CE48 /* LaunchScreen.storyboard */,
 				7E0B93DE25D7CD5900C2CE48 /* Info.plist */,
 				7E76883025D8C4F3008D1433 /* SigninViewController.swift */,
-				7E76884325D91971008D1433 /* LoginCredential.swift */,
-				7E76884825D91A16008D1433 /* ResponseData.swift */,
+				7E76886325D957D4008D1433 /* SurveyContainerViewController.swift */,
+				7E76887E25D97F31008D1433 /* SurveyPageViewController.swift */,
+				7E76888625D97F4C008D1433 /* SurveyViewController.swift */,
 			);
 			path = nimbleTest;
 			sourceTree = "<group>";
@@ -134,6 +151,26 @@
 				7E0B93E925D7CD5A00C2CE48 /* Info.plist */,
 			);
 			path = nimbleTestTests;
+			sourceTree = "<group>";
+		};
+		7E76885325D9254D008D1433 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E76884325D91971008D1433 /* LoginCredential.swift */,
+				7E76884825D91A16008D1433 /* ResponseData.swift */,
+				7E76886825D9669B008D1433 /* LoginSession.swift */,
+				7E76887225D978E0008D1433 /* UserProfile.swift */,
+				7E76887825D978FE008D1433 /* Survey.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7E76887D25D97F0B008D1433 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7E76886D25D96FB8008D1433 /* OAuthAuthenticator.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		81B5384776F6F39D921202CA /* Frameworks */ = {
@@ -318,10 +355,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E76887925D978FE008D1433 /* Survey.swift in Sources */,
+				7E76888725D97F4C008D1433 /* SurveyViewController.swift in Sources */,
 				7E76884425D91971008D1433 /* LoginCredential.swift in Sources */,
 				7E76883125D8C4F3008D1433 /* SigninViewController.swift in Sources */,
 				7E76884925D91A16008D1433 /* ResponseData.swift in Sources */,
 				7E0B93D125D7CD5900C2CE48 /* AppDelegate.swift in Sources */,
+				7E76887325D978E0008D1433 /* UserProfile.swift in Sources */,
+				7E76886E25D96FB8008D1433 /* OAuthAuthenticator.swift in Sources */,
+				7E76886925D9669B008D1433 /* LoginSession.swift in Sources */,
+				7E76886425D957D4008D1433 /* SurveyContainerViewController.swift in Sources */,
+				7E76887F25D97F31008D1433 /* SurveyPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

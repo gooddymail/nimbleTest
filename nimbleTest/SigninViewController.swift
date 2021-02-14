@@ -69,18 +69,25 @@ class SigninViewController: UIViewController {
             .responseDecodable(of: ResponseData<LoginCredential>.self) { (response) in
                 switch response.result {
                 case .success(let responseData):
-                    self.saveAccessToken(from: responseData.data)
-                
+                    LoginSession.share.credential = responseData.data
+                    
+                    DispatchQueue.main.async {
+                        self.showSurveyList()
+                    }
                 case .failure(let error):
                     print(error)
                 }
             }
     }
     
-    func saveAccessToken(from credential: LoginCredential) {
-        let keychain = Keychain(service: "com.nimble-token")
-        let encoder = JSONEncoder()
-        let credentialData = try! encoder.encode(credential)
-        keychain[data: "login_credential"] = credentialData
+    func showSurveyList() {
+        guard let surveyContainerViewController = storyboard?.instantiateViewController(withIdentifier: "SurveyContainerViewController") as? SurveyContainerViewController else {
+            assertionFailure("No view controler ID DetailsViewController")
+            
+            return
+        }
+        
+        let navigationController = UINavigationController(rootViewController: surveyContainerViewController)
+        UIApplication.shared.delegate?.window??.rootViewController = navigationController
     }
 }
