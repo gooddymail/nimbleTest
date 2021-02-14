@@ -19,6 +19,11 @@ class SurveyContainerViewController: UIViewController {
     
     @IBOutlet weak var surveyPageControl: UIPageControl!
     
+    weak var surveyPageViewController: SurveyPageViewController!
+    
+    var userProfile: UserProfile!
+    var surveyList: [Survey]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,6 +32,16 @@ class SurveyContainerViewController: UIViewController {
         profileImageView.layer.cornerRadius = 18
         
         loadProfileAndSurveyList()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     func loadProfileAndSurveyList() {
@@ -43,10 +58,10 @@ class SurveyContainerViewController: UIViewController {
             let profileURLRequest = URLRequest(url: URL(string: "https://survey-api.nimblehq.co/api/v1/me")!)
             session.request(profileURLRequest, interceptor: interceptor)
                 .validate()
-                .responseJSON { (response) in
+                .responseDecodable(of: ResponseData<UserProfile>.self) { (response) in
                     switch response.result {
-                    case .success(let json):
-                        print(json)
+                    case .success(let responseData):
+                        self.userProfile = responseData.data
                         
                     case .failure(let error):
                         print(error)
@@ -59,10 +74,10 @@ class SurveyContainerViewController: UIViewController {
             let surveyListURLRequest = URLRequest(url: URL(string: "https://survey-api.nimblehq.co/api/v1/surveys?page[number]=1&page[size]=2")!)
             session.request(surveyListURLRequest, interceptor: interceptor)
                 .validate()
-                .responseJSON { (response) in
+                .responseDecodable(of: ResponseData<[Survey]>.self) { (response) in
                     switch response.result {
-                    case .success(let json):
-                        print(json)
+                    case .success(let responseData):
+                        self.surveyList = responseData.data
                         
                     case .failure(let error):
                         print(error)
@@ -77,22 +92,36 @@ class SurveyContainerViewController: UIViewController {
                     self.view.stopSkeletonAnimation()
                     self.loadingAnimationView.isHidden = true
                     self.setupProfile()
+                    self.setupSurvey()
                 }
             }
         }
     }
     
     func setupProfile() {
+        profileImageView.af.setImage(withURL: URL(string: userProfile.avatarURL)!, placeholderImage: UIImage(named: "ProfilePlaceholder"))
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE, MMM d"
+        
+        dateLabel.text = dateFormatter.string(from: Date())
+    }
+    
+    func setupSurvey() {
+        surveyPageControl.numberOfPages = surveyList.count
+        surveyPageViewController.updatePageViewWith(surveyList)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let controller = segue.destination as? SurveyPageViewController {
+            surveyPageViewController = controller
+            surveyPageViewController.surveyPageDelegate = self
+        }
     }
-    */
+}
 
+extension SurveyContainerViewController: SurveyPageViewControllerDelegate {
+    func surveyPageViewController(surveyPageViewController: SurveyPageViewController, didUpdatePageIndex index: Int) {
+        surveyPageControl.currentPage = index
+    }
 }

@@ -23,7 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 return true
             }
             
-            window?.rootViewController = surveyContainerViewController
+            let navigationController = UINavigationController(rootViewController: surveyContainerViewController)
+            window?.rootViewController = navigationController
         }
         
         return true

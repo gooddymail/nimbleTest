@@ -87,6 +87,7 @@ class SigninViewController: UIViewController {
             return
         }
         
-        UIApplication.shared.delegate?.window??.rootViewController = surveyContainerViewController
+        let navigationController = UINavigationController(rootViewController: surveyContainerViewController)
+        UIApplication.shared.delegate?.window??.rootViewController = navigationController
     }
 }
