@@ -114,6 +114,7 @@
 		7E0B93CF25D7CD5900C2CE48 /* nimbleTest */ = {
 			isa = PBXGroup;
 			children = (
+				7E76885325D9254D008D1433 /* Models */,
 				7E76883F25D913A0008D1433 /* nimbleTest.entitlements */,
 				7E0B93D025D7CD5900C2CE48 /* AppDelegate.swift */,
 				7E0B93D625D7CD5900C2CE48 /* Main.storyboard */,
@@ -121,8 +122,6 @@
 				7E0B93DB25D7CD5900C2CE48 /* LaunchScreen.storyboard */,
 				7E0B93DE25D7CD5900C2CE48 /* Info.plist */,
 				7E76883025D8C4F3008D1433 /* SigninViewController.swift */,
-				7E76884325D91971008D1433 /* LoginCredential.swift */,
-				7E76884825D91A16008D1433 /* ResponseData.swift */,
 			);
 			path = nimbleTest;
 			sourceTree = "<group>";
@@ -134,6 +133,15 @@
 				7E0B93E925D7CD5A00C2CE48 /* Info.plist */,
 			);
 			path = nimbleTestTests;
+			sourceTree = "<group>";
+		};
+		7E76885325D9254D008D1433 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E76884325D91971008D1433 /* LoginCredential.swift */,
+				7E76884825D91A16008D1433 /* ResponseData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		81B5384776F6F39D921202CA /* Frameworks */ = {
