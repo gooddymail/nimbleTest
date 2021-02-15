@@ -15,11 +15,11 @@
 		7E0D076725DAB3B300CEE2F4 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76887225D978E0008D1433 /* UserProfile.swift */; };
 		7E0D076825DAB3B600CEE2F4 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76887825D978FE008D1433 /* Survey.swift */; };
 		7E0D078025DAB67C00CEE2F4 /* LoginCredentialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D077F25DAB67C00CEE2F4 /* LoginCredentialTests.swift */; };
-		7E0D078525DAB71F00CEE2F4 /* LoginCredentialResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D078425DAB71F00CEE2F4 /* LoginCredentialResponse.json */; };
+		7E0D078525DAB71F00CEE2F4 /* LoginCredential.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D078425DAB71F00CEE2F4 /* LoginCredential.json */; };
 		7E0D078B25DABB8B00CEE2F4 /* UserProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D078A25DABB8B00CEE2F4 /* UserProfileTests.swift */; };
-		7E0D078F25DABBA500CEE2F4 /* UserProfileResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D078E25DABBA500CEE2F4 /* UserProfileResponse.json */; };
+		7E0D078F25DABBA500CEE2F4 /* UserProfile.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D078E25DABBA500CEE2F4 /* UserProfile.json */; };
 		7E0D079325DABD4C00CEE2F4 /* SurveyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D079225DABD4C00CEE2F4 /* SurveyTests.swift */; };
-		7E0D079725DABD7300CEE2F4 /* SurveyResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D079625DABD7300CEE2F4 /* SurveyResponse.json */; };
+		7E0D079725DABD7300CEE2F4 /* Survey.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D079625DABD7300CEE2F4 /* Survey.json */; };
 		7E76883125D8C4F3008D1433 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76883025D8C4F3008D1433 /* SigninViewController.swift */; };
 		7E76884425D91971008D1433 /* LoginCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76884325D91971008D1433 /* LoginCredential.swift */; };
 		7E76884925D91A16008D1433 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76884825D91A16008D1433 /* ResponseData.swift */; };
@@ -59,11 +59,11 @@
 		7E0B93E325D7CD5A00C2CE48 /* nimbleTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nimbleTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0B93E925D7CD5A00C2CE48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E0D077F25DAB67C00CEE2F4 /* LoginCredentialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentialTests.swift; sourceTree = "<group>"; };
-		7E0D078425DAB71F00CEE2F4 /* LoginCredentialResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LoginCredentialResponse.json; sourceTree = "<group>"; };
+		7E0D078425DAB71F00CEE2F4 /* LoginCredential.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LoginCredential.json; sourceTree = "<group>"; };
 		7E0D078A25DABB8B00CEE2F4 /* UserProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileTests.swift; sourceTree = "<group>"; };
-		7E0D078E25DABBA500CEE2F4 /* UserProfileResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserProfileResponse.json; sourceTree = "<group>"; };
+		7E0D078E25DABBA500CEE2F4 /* UserProfile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserProfile.json; sourceTree = "<group>"; };
 		7E0D079225DABD4C00CEE2F4 /* SurveyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyTests.swift; sourceTree = "<group>"; };
-		7E0D079625DABD7300CEE2F4 /* SurveyResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SurveyResponse.json; sourceTree = "<group>"; };
+		7E0D079625DABD7300CEE2F4 /* Survey.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Survey.json; sourceTree = "<group>"; };
 		7E76883025D8C4F3008D1433 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		7E76883F25D913A0008D1433 /* nimbleTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = nimbleTest.entitlements; sourceTree = "<group>"; };
 		7E76884325D91971008D1433 /* LoginCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredential.swift; sourceTree = "<group>"; };
@@ -151,15 +151,23 @@
 		7E0B93E625D7CD5A00C2CE48 /* nimbleTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				7E0D07A325DAC00700CEE2F4 /* Resources */,
 				7E0B93E925D7CD5A00C2CE48 /* Info.plist */,
 				7E0D077F25DAB67C00CEE2F4 /* LoginCredentialTests.swift */,
-				7E0D078425DAB71F00CEE2F4 /* LoginCredentialResponse.json */,
 				7E0D078A25DABB8B00CEE2F4 /* UserProfileTests.swift */,
-				7E0D078E25DABBA500CEE2F4 /* UserProfileResponse.json */,
 				7E0D079225DABD4C00CEE2F4 /* SurveyTests.swift */,
-				7E0D079625DABD7300CEE2F4 /* SurveyResponse.json */,
 			);
 			path = nimbleTestTests;
+			sourceTree = "<group>";
+		};
+		7E0D07A325DAC00700CEE2F4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7E0D078E25DABBA500CEE2F4 /* UserProfile.json */,
+				7E0D079625DABD7300CEE2F4 /* Survey.json */,
+				7E0D078425DAB71F00CEE2F4 /* LoginCredential.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		7E76885325D9254D008D1433 /* Models */ = {
@@ -285,9 +293,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E0D079725DABD7300CEE2F4 /* SurveyResponse.json in Resources */,
-				7E0D078525DAB71F00CEE2F4 /* LoginCredentialResponse.json in Resources */,
-				7E0D078F25DABBA500CEE2F4 /* UserProfileResponse.json in Resources */,
+				7E0D079725DABD7300CEE2F4 /* Survey.json in Resources */,
+				7E0D078525DAB71F00CEE2F4 /* LoginCredential.json in Resources */,
+				7E0D078F25DABBA500CEE2F4 /* UserProfile.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

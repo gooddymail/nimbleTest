@@ -10,7 +10,7 @@ import XCTest
 class SurveyTests: XCTestCase {
 
     func testDecodeData() {
-        guard let pathString = Bundle(for: type(of: self)).path(forResource: "SurveyResponse", ofType: "json") else {
+        guard let pathString = Bundle(for: type(of: self)).path(forResource: "Survey", ofType: "json") else {
             fatalError("SurveyResponse.json not found")
         }
         guard let jsonString = try? String(contentsOfFile: pathString, encoding: .utf8) else {

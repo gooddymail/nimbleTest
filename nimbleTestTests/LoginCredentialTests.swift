@@ -9,7 +9,7 @@ import XCTest
 
 class LoginCredentialTests: XCTestCase {
     func testDecodeData() {
-        guard let pathString = Bundle(for: type(of: self)).path(forResource: "LoginCredentialResponse", ofType: "json") else {
+        guard let pathString = Bundle(for: type(of: self)).path(forResource: "LoginCredential", ofType: "json") else {
             fatalError("LoginCredentialResponse.json not found")
         }
         guard let jsonString = try? String(contentsOfFile: pathString, encoding: .utf8) else {
