@@ -12,6 +12,9 @@
 		7E0B93DA25D7CD5900C2CE48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0B93D925D7CD5900C2CE48 /* Assets.xcassets */; };
 		7E0B93DD25D7CD5900C2CE48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0B93DB25D7CD5900C2CE48 /* LaunchScreen.storyboard */; };
 		7E0B93E825D7CD5A00C2CE48 /* nimbleTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B93E725D7CD5A00C2CE48 /* nimbleTestTests.swift */; };
+		7E0D076625DAB3AE00CEE2F4 /* LoginCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76884325D91971008D1433 /* LoginCredential.swift */; };
+		7E0D076725DAB3B300CEE2F4 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76887225D978E0008D1433 /* UserProfile.swift */; };
+		7E0D076825DAB3B600CEE2F4 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76887825D978FE008D1433 /* Survey.swift */; };
 		7E76883125D8C4F3008D1433 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76883025D8C4F3008D1433 /* SigninViewController.swift */; };
 		7E76884425D91971008D1433 /* LoginCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76884325D91971008D1433 /* LoginCredential.swift */; };
 		7E76884925D91A16008D1433 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76884825D91A16008D1433 /* ResponseData.swift */; };
@@ -22,6 +25,7 @@
 		7E76887925D978FE008D1433 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76887825D978FE008D1433 /* Survey.swift */; };
 		7E76887F25D97F31008D1433 /* SurveyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76887E25D97F31008D1433 /* SurveyPageViewController.swift */; };
 		7E76888725D97F4C008D1433 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76888625D97F4C008D1433 /* SurveyViewController.swift */; };
+		7EDDD5DC16F1EC87E6E37B34 /* Pods_nimbleTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29230357B11E8AE1B6381E92 /* Pods_nimbleTestTests.framework */; };
 		DAB9FAC6FC391092413BADE2 /* Pods_nimbleTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E7ECE3006BB91740C1D8BA /* Pods_nimbleTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,17 +37,12 @@
 			remoteGlobalIDString = 7E0B93CC25D7CD5900C2CE48;
 			remoteInfo = nimbleTest;
 		};
-		7E0B93EF25D7CD5A00C2CE48 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7E0B93C525D7CD5900C2CE48 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7E0B93CC25D7CD5900C2CE48;
-			remoteInfo = nimbleTest;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		062A300166985F4348754C77 /* Pods-nimbleTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbleTest.debug.xcconfig"; path = "Target Support Files/Pods-nimbleTest/Pods-nimbleTest.debug.xcconfig"; sourceTree = "<group>"; };
+		29230357B11E8AE1B6381E92 /* Pods_nimbleTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nimbleTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		632DEC4B0BBAF0578C596408 /* Pods-nimbleTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbleTestTests.debug.xcconfig"; path = "Target Support Files/Pods-nimbleTestTests/Pods-nimbleTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		75C1F38F900A55D3E1E76933 /* Pods-nimbleTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbleTest.release.xcconfig"; path = "Target Support Files/Pods-nimbleTest/Pods-nimbleTest.release.xcconfig"; sourceTree = "<group>"; };
 		77E7ECE3006BB91740C1D8BA /* Pods_nimbleTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nimbleTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0B93CD25D7CD5900C2CE48 /* nimbleTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nimbleTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,7 +54,6 @@
 		7E0B93E325D7CD5A00C2CE48 /* nimbleTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nimbleTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0B93E725D7CD5A00C2CE48 /* nimbleTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nimbleTestTests.swift; sourceTree = "<group>"; };
 		7E0B93E925D7CD5A00C2CE48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E0B93EE25D7CD5A00C2CE48 /* nimbleTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nimbleTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E76883025D8C4F3008D1433 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		7E76883F25D913A0008D1433 /* nimbleTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = nimbleTest.entitlements; sourceTree = "<group>"; };
 		7E76884325D91971008D1433 /* LoginCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredential.swift; sourceTree = "<group>"; };
@@ -67,6 +65,7 @@
 		7E76887825D978FE008D1433 /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 		7E76887E25D97F31008D1433 /* SurveyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyPageViewController.swift; sourceTree = "<group>"; };
 		7E76888625D97F4C008D1433 /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
+		832FB366B41E8602AC925C34 /* Pods-nimbleTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbleTestTests.release.xcconfig"; path = "Target Support Files/Pods-nimbleTestTests/Pods-nimbleTestTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,13 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E0B93EB25D7CD5A00C2CE48 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				7EDDD5DC16F1EC87E6E37B34 /* Pods_nimbleTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +93,8 @@
 			children = (
 				062A300166985F4348754C77 /* Pods-nimbleTest.debug.xcconfig */,
 				75C1F38F900A55D3E1E76933 /* Pods-nimbleTest.release.xcconfig */,
+				632DEC4B0BBAF0578C596408 /* Pods-nimbleTestTests.debug.xcconfig */,
+				832FB366B41E8602AC925C34 /* Pods-nimbleTestTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -120,7 +115,6 @@
 			children = (
 				7E0B93CD25D7CD5900C2CE48 /* nimbleTest.app */,
 				7E0B93E325D7CD5A00C2CE48 /* nimbleTestTests.xctest */,
-				7E0B93EE25D7CD5A00C2CE48 /* nimbleTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				77E7ECE3006BB91740C1D8BA /* Pods_nimbleTest.framework */,
+				29230357B11E8AE1B6381E92 /* Pods_nimbleTestTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -207,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E0B93FA25D7CD5A00C2CE48 /* Build configuration list for PBXNativeTarget "nimbleTestTests" */;
 			buildPhases = (
+				7E66613EA1B7A514E3BE70CA /* [CP] Check Pods Manifest.lock */,
 				7E0B93DF25D7CD5A00C2CE48 /* Sources */,
 				7E0B93E025D7CD5A00C2CE48 /* Frameworks */,
 				7E0B93E125D7CD5A00C2CE48 /* Resources */,
+				FCF9059008661AA9889CEE37 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,24 +217,6 @@
 			productName = nimbleTestTests;
 			productReference = 7E0B93E325D7CD5A00C2CE48 /* nimbleTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7E0B93ED25D7CD5A00C2CE48 /* nimbleTestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7E0B93FD25D7CD5A00C2CE48 /* Build configuration list for PBXNativeTarget "nimbleTestUITests" */;
-			buildPhases = (
-				7E0B93EA25D7CD5A00C2CE48 /* Sources */,
-				7E0B93EB25D7CD5A00C2CE48 /* Frameworks */,
-				7E0B93EC25D7CD5A00C2CE48 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7E0B93F025D7CD5A00C2CE48 /* PBXTargetDependency */,
-			);
-			name = nimbleTestUITests;
-			productName = nimbleTestUITests;
-			productReference = 7E0B93EE25D7CD5A00C2CE48 /* nimbleTestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -252,10 +231,6 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					7E0B93E225D7CD5A00C2CE48 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 7E0B93CC25D7CD5900C2CE48;
-					};
-					7E0B93ED25D7CD5A00C2CE48 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 7E0B93CC25D7CD5900C2CE48;
 					};
@@ -276,7 +251,6 @@
 			targets = (
 				7E0B93CC25D7CD5900C2CE48 /* nimbleTest */,
 				7E0B93E225D7CD5A00C2CE48 /* nimbleTestTests */,
-				7E0B93ED25D7CD5A00C2CE48 /* nimbleTestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -299,16 +273,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7E0B93EC25D7CD5A00C2CE48 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7E66613EA1B7A514E3BE70CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nimbleTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E69FAD97909C185594DEF39D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,6 +337,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FCF9059008661AA9889CEE37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nimbleTestTests/Pods-nimbleTestTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nimbleTestTests/Pods-nimbleTestTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nimbleTestTests/Pods-nimbleTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -373,14 +379,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E0D076625DAB3AE00CEE2F4 /* LoginCredential.swift in Sources */,
+				7E0D076825DAB3B600CEE2F4 /* Survey.swift in Sources */,
 				7E0B93E825D7CD5A00C2CE48 /* nimbleTestTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E0B93EA25D7CD5A00C2CE48 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				7E0D076725DAB3B300CEE2F4 /* UserProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,11 +393,6 @@
 			isa = PBXTargetDependency;
 			target = 7E0B93CC25D7CD5900C2CE48 /* nimbleTest */;
 			targetProxy = 7E0B93E425D7CD5A00C2CE48 /* PBXContainerItemProxy */;
-		};
-		7E0B93F025D7CD5A00C2CE48 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7E0B93CC25D7CD5900C2CE48 /* nimbleTest */;
-			targetProxy = 7E0B93EF25D7CD5A00C2CE48 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -581,6 +578,7 @@
 		};
 		7E0B93FB25D7CD5A00C2CE48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 632DEC4B0BBAF0578C596408 /* Pods-nimbleTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -603,6 +601,7 @@
 		};
 		7E0B93FC25D7CD5A00C2CE48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 832FB366B41E8602AC925C34 /* Pods-nimbleTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -620,46 +619,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nimbleTest.app/nimbleTest";
-			};
-			name = Release;
-		};
-		7E0B93FE25D7CD5A00C2CE48 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T6KJNN227F;
-				INFOPLIST_FILE = nimbleTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Katchapon.nimbleTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = nimbleTest;
-			};
-			name = Debug;
-		};
-		7E0B93FF25D7CD5A00C2CE48 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T6KJNN227F;
-				INFOPLIST_FILE = nimbleTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Katchapon.nimbleTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = nimbleTest;
 			};
 			name = Release;
 		};
@@ -689,15 +648,6 @@
 			buildConfigurations = (
 				7E0B93FB25D7CD5A00C2CE48 /* Debug */,
 				7E0B93FC25D7CD5A00C2CE48 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7E0B93FD25D7CD5A00C2CE48 /* Build configuration list for PBXNativeTarget "nimbleTestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7E0B93FE25D7CD5A00C2CE48 /* Debug */,
-				7E0B93FF25D7CD5A00C2CE48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

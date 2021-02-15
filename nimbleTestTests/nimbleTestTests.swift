@@ -7,6 +7,7 @@
 
 import XCTest
 @testable import nimbleTest
+@testable import LoginCredential
 
 class nimbleTestTests: XCTestCase {
 
