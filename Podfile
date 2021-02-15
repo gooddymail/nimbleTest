@@ -10,4 +10,11 @@ target 'nimbleTest' do
   pod 'KeychainAccess'	
   pod 'SkeletonView'
 
+  target 'nimbleTestTests' do
+     inherit! :search_paths
+     pod 'Alamofire', '~> 5.2'
+     pod 'KeychainAccess'
+     pod 'Mocker', '~> 2.2.0'
+  end
+
 end
