@@ -20,6 +20,11 @@
 		7E0D078F25DABBA500CEE2F4 /* UserProfile.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D078E25DABBA500CEE2F4 /* UserProfile.json */; };
 		7E0D079325DABD4C00CEE2F4 /* SurveyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D079225DABD4C00CEE2F4 /* SurveyTests.swift */; };
 		7E0D079725DABD7300CEE2F4 /* Survey.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D079625DABD7300CEE2F4 /* Survey.json */; };
+		7E0D07B425DAC3B300CEE2F4 /* LoginAPIResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D07B325DAC3B300CEE2F4 /* LoginAPIResponse.json */; };
+		7E0D07B825DAC3E700CEE2F4 /* MockedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D07B725DAC3E700CEE2F4 /* MockedData.swift */; };
+		7E0D07BE25DAC4D200CEE2F4 /* APIRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D07BD25DAC4D200CEE2F4 /* APIRequestTests.swift */; };
+		7E0D07C125DAC5ED00CEE2F4 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76884825D91A16008D1433 /* ResponseData.swift */; };
+		7E0D07C525DACE5600CEE2F4 /* SurveyAPIResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D07C425DACE5600CEE2F4 /* SurveyAPIResponse.json */; };
 		7E76883125D8C4F3008D1433 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76883025D8C4F3008D1433 /* SigninViewController.swift */; };
 		7E76884425D91971008D1433 /* LoginCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76884325D91971008D1433 /* LoginCredential.swift */; };
 		7E76884925D91A16008D1433 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76884825D91A16008D1433 /* ResponseData.swift */; };
@@ -64,6 +69,10 @@
 		7E0D078E25DABBA500CEE2F4 /* UserProfile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserProfile.json; sourceTree = "<group>"; };
 		7E0D079225DABD4C00CEE2F4 /* SurveyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyTests.swift; sourceTree = "<group>"; };
 		7E0D079625DABD7300CEE2F4 /* Survey.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Survey.json; sourceTree = "<group>"; };
+		7E0D07B325DAC3B300CEE2F4 /* LoginAPIResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LoginAPIResponse.json; sourceTree = "<group>"; };
+		7E0D07B725DAC3E700CEE2F4 /* MockedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedData.swift; sourceTree = "<group>"; };
+		7E0D07BD25DAC4D200CEE2F4 /* APIRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestTests.swift; sourceTree = "<group>"; };
+		7E0D07C425DACE5600CEE2F4 /* SurveyAPIResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SurveyAPIResponse.json; sourceTree = "<group>"; };
 		7E76883025D8C4F3008D1433 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		7E76883F25D913A0008D1433 /* nimbleTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = nimbleTest.entitlements; sourceTree = "<group>"; };
 		7E76884325D91971008D1433 /* LoginCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredential.swift; sourceTree = "<group>"; };
@@ -156,6 +165,8 @@
 				7E0D077F25DAB67C00CEE2F4 /* LoginCredentialTests.swift */,
 				7E0D078A25DABB8B00CEE2F4 /* UserProfileTests.swift */,
 				7E0D079225DABD4C00CEE2F4 /* SurveyTests.swift */,
+				7E0D07B725DAC3E700CEE2F4 /* MockedData.swift */,
+				7E0D07BD25DAC4D200CEE2F4 /* APIRequestTests.swift */,
 			);
 			path = nimbleTestTests;
 			sourceTree = "<group>";
@@ -166,6 +177,8 @@
 				7E0D078E25DABBA500CEE2F4 /* UserProfile.json */,
 				7E0D079625DABD7300CEE2F4 /* Survey.json */,
 				7E0D078425DAB71F00CEE2F4 /* LoginCredential.json */,
+				7E0D07B325DAC3B300CEE2F4 /* LoginAPIResponse.json */,
+				7E0D07C425DACE5600CEE2F4 /* SurveyAPIResponse.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -295,6 +308,8 @@
 			files = (
 				7E0D079725DABD7300CEE2F4 /* Survey.json in Resources */,
 				7E0D078525DAB71F00CEE2F4 /* LoginCredential.json in Resources */,
+				7E0D07B425DAC3B300CEE2F4 /* LoginAPIResponse.json in Resources */,
+				7E0D07C525DACE5600CEE2F4 /* SurveyAPIResponse.json in Resources */,
 				7E0D078F25DABBA500CEE2F4 /* UserProfile.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,7 +424,10 @@
 				7E0D076625DAB3AE00CEE2F4 /* LoginCredential.swift in Sources */,
 				7E0D076825DAB3B600CEE2F4 /* Survey.swift in Sources */,
 				7E0D076725DAB3B300CEE2F4 /* UserProfile.swift in Sources */,
+				7E0D07C125DAC5ED00CEE2F4 /* ResponseData.swift in Sources */,
 				7E0D078B25DABB8B00CEE2F4 /* UserProfileTests.swift in Sources */,
+				7E0D07B825DAC3E700CEE2F4 /* MockedData.swift in Sources */,
+				7E0D07BE25DAC4D200CEE2F4 /* APIRequestTests.swift in Sources */,
 				7E0D079325DABD4C00CEE2F4 /* SurveyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
